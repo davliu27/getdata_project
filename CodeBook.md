@@ -1,9 +1,11 @@
 #CodeBook.md
-=============================================================================================================
+
 Project Description:
+================================================================
 This project is taking the data obtained from the "Human Activity Recognition Using Smartphones Dataset Version 1.0" and creating tidy data sets.
-=============================================================================================================
+
 Study design:
+================================================================
 The original data was obtained from:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
@@ -17,17 +19,17 @@ The original data can be obtained here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 Creating the tidy datafile:
+=================================================================
+*0.Download the original raw data from the link above.
+*1.Merge the training and the test sets to create one data set.
+*2.Extract only the measurements on the mean and standard deviation for each measurement. 
+*3.Use descriptive activity names to name the activities in the data set
+*4.Appropriately label the data set with descriptive variable names. 
+*5.From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+*6. create tidy_data.txt file
 
-0.Download the original raw data from the link above.
-1.Merge the training and the test sets to create one data set.
-2.Extract only the measurements on the mean and standard deviation for each measurement. 
-3.Use descriptive activity names to name the activities in the data set
-4.Appropriately label the data set with descriptive variable names. 
-5.From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-=============================================================================================================
 Code book variables:
-
+==============================================================
   list of variables:
 
  [1] "Subject"                         "Activity"                       
@@ -73,34 +75,34 @@ Code book variables:
 [81] "fBodyBodyGyroJerkMag-meanFreq()"
 
   Meaning: 
-  -Subject: the subject that data was recorded from
-  -Activity: the activity that the subject was performing while data was be recorded
+  *Subject: the subject that data was recorded from
+  *Activity: the activity that the subject was performing while data was be recorded
 
   The rest of the variables are a combination of the explainations below:
   
   '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-  -tBodyAcc-XYZ:      acceleration readings from the body
-  -tGravityAcc-XYZ:   acceleration readings from gravity
-  -tBodyAccJerk-XYZ:  jerk derived from body linear acceleration
-  -tBodyGyro-XYZ:     gyroscope readings from the body
-  -tBodyGyroJerk-XYZ: jerk derived from body angular velocity
-  -tBodyAccMag:       magnitude calculated using Euclidean norm from acceleration from the body
-  -tGravityAccMag:    magnitude calculated using Euclidean norm from acceleration from gravity
-  -tBodyAccJerkMag:   jerk magnitude derived from acceleration from the body
-  -tBodyGyroMag:      magnitude calculated using Euclidean norm from angular velocity of the body
-  -tBodyGyroJerkMag:  jerk magnitude derived from angular velocity of the body
-  -fBodyAcc-XYZ:      Fast Fourier Transform (FFT) of linear acceleration of the body
-  -fBodyAccJerk-XYZ:  Fast Fourier Transform (FFT) of linear acceleration jerk of the body
-  -fBodyGyro-XYZ:     Fast Fourier Transform (FFT) of angular velocity of the body
-  -fBodyAccMag:       Fast Fourier Transform (FFT) of the magnitude of the linear acceleration of the body
-  -fBodyAccJerkMag:   Fast Fourier Transform (FFT) of the jerk magnitude of the linear acc of the body
-  -fBodyGyroMag:      Fast Fourier Transform (FFT) of the magnitude of angular velocity of the body 
-  -fBodyGyroJerkMag:  Fast Fourier Transform (FFT) of the jerk magnitude of the angular vel. of the body
+  *tBodyAcc-XYZ:      acceleration readings from the body
+  *tGravityAcc-XYZ:   acceleration readings from gravity
+  *tBodyAccJerk-XYZ:  jerk derived from body linear acceleration
+  *tBodyGyro-XYZ:     gyroscope readings from the body
+  *tBodyGyroJerk-XYZ: jerk derived from body angular velocity
+  *tBodyAccMag:       magnitude calculated using Euclidean norm from acceleration from the body
+  *tGravityAccMag:    magnitude calculated using Euclidean norm from acceleration from gravity
+  *tBodyAccJerkMag:   jerk magnitude derived from acceleration from the body
+  *tBodyGyroMag:      magnitude calculated using Euclidean norm from angular velocity of the body
+  *tBodyGyroJerkMag:  jerk magnitude derived from angular velocity of the body
+  *fBodyAcc-XYZ:      Fast Fourier Transform (FFT) of linear acceleration of the body
+  *fBodyAccJerk-XYZ:  Fast Fourier Transform (FFT) of linear acceleration jerk of the body
+  *fBodyGyro-XYZ:     Fast Fourier Transform (FFT) of angular velocity of the body
+  *fBodyAccMag:       Fast Fourier Transform (FFT) of the magnitude of the linear acceleration of the body
+  *fBodyAccJerkMag:   Fast Fourier Transform (FFT) of the jerk magnitude of the linear acc of the body
+  *fBodyGyroMag:      Fast Fourier Transform (FFT) of the magnitude of angular velocity of the body 
+  *fBodyGyroJerkMag:  Fast Fourier Transform (FFT) of the jerk magnitude of the angular vel. of the body
   
-  -mean(): Mean value
-  -std(): Standard deviation
-===========================================================================================================  
+  *mean(): Mean value
+  *std(): Standard deviation
+ 
 Sources:
-  
+=================================================================================================  
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
